@@ -8,15 +8,19 @@ var $root = ($protobuf.roots["default"] || ($protobuf.roots["default"] = new $pr
   syntax: "proto3"
 })
 .addJSON({
-  Person: {
-    fields: {
-      name: {
-        type: "string",
-        id: 1
-      },
-      age: {
-        type: "int32",
-        id: 2
+  test: {
+    nested: {
+      Person: {
+        fields: {
+          name: {
+            type: "string",
+            id: 1
+          },
+          age: {
+            type: "int32",
+            id: 2
+          }
+        }
       }
     }
   }

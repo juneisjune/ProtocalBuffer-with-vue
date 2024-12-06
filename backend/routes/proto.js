@@ -11,7 +11,7 @@ router.get("/", async function (req, res) {
     const root = await protobuf.load(protoPath);
     const PersonMessage = root.lookupType("test.Person");
     
-    const payload = { name: "jinny", age: 27 };
+    const payload = { name: "june", age: 27 };
     const errMsg = PersonMessage.verify(payload);
     
     if (errMsg) {
